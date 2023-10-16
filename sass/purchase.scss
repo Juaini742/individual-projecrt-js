@@ -1,0 +1,82 @@
+@import 'main';
+
+.container {
+  background-image: url(../img/Rectangle\ 35.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  @include flex-box(center, center);
+
+  .wrap {
+    width: 90%;
+    @include flex-box(space-evenly, center);
+    margin: 0 auto;
+    gap: 10px;
+
+    .form-info {
+      width: 50%;
+      background-color: rgba($color: #000000, $alpha: .4);
+      padding: 15px;
+      height: 300px;
+      border-radius: 20px;
+      color: $light-color;
+
+      h2 {
+        @include font-head(4rem, 600);
+      }
+
+      h6 {
+        @include font-body(1.5rem, 600);
+      }
+
+      h3 {
+        @include font-body(2rem, 700);
+      }
+
+      p {
+        @include font-body(1rem, 400);
+        margin-bottom: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .buy-btn {
+        @extend %hover-danger-bg;
+        @include font-body(.8rem, 400);
+        padding: 8px 15px;
+        border-radius: 5px;
+        color: $light-color;
+      }
+
+      .back-btn {
+        @extend %hover-outline-bg;
+        @include font-body(.8rem, 400);
+        padding: 6px 15px;
+        border-radius: 5px;
+        color: $secondary-color;
+      }
+    }
+
+    .img {
+      width: 400px;
+      padding: 8px;
+      border: 2px solid $secondary-color;
+      border-radius: 12px;
+      transition: all ease-in-out .3s;
+      box-shadow: 0 0 10px rgba($color: $secondary-color, $alpha: .5);
+
+      &:hover {
+        scale: (1.1);
+        transition: all ease-in-out .3s;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+  }
+}

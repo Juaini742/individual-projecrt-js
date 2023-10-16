@@ -1,0 +1,62 @@
+@import 'main';
+
+.container {
+  background-image: url(../img/Rectangle\ 34.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  @include flex-box(center, center, column);
+
+  .input-body {
+    background-color: rgba($color: #000000, $alpha: .5);
+    width: 50%;
+    height: 50%;
+    @include flex-box(center, center, column);
+    border-radius: 20px;
+
+    h2 {
+      @include font-head(3rem, 800);
+      color: $light-color;
+      text-align: center;
+    }
+
+    .input-item {
+      @include flex-box(stretch, stretch, column);
+      color: $light-color;
+      width: 60%;
+      gap: 10px;
+
+      label {
+        @include font-body(1rem, 400);
+      }
+
+      input {
+        height: 30px;
+        margin-bottom: 10px;
+        background-color: transparent;
+        transition: all ease-in-out .3s;
+
+        border: none {
+          bottom: 2px solid #fff;
+        }
+
+        &:hover {
+          background-color: bisque;
+          transition: all ease-in-out .3s;
+        }
+
+      }
+    }
+
+    button {
+      @include font-body(1rem, normal);
+      @extend %hover-danger-bg;
+      border: none;
+      color: $light-color;
+      border-radius: 5px;
+      width: 100px;
+      height: 35px;
+    }
+  }
+}

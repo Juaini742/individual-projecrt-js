@@ -1,0 +1,330 @@
+@import 'main';
+
+// NAVIGATION CONTROLS
+.navigation {
+  background-color: $primary-color;
+
+  .wrap {
+    @include flex-box(space-between, center);
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+
+    .list-items {
+      @include flex-box(center, center);
+      list-style: none;
+      gap: 20px;
+
+      a {
+        @include font-body(15px, 500);
+        text-decoration: none;
+        color: $dark-color;
+        transition: all ease-in-out .3s;
+
+        &:hover {
+          border-bottom: 2px solid $dark-color;
+          transition: all ease-in-out .3s
+        }
+      }
+    }
+
+    .login {
+      @extend %hover-outline-bg;
+      @include font-body(.9rem, 400);
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: $dark-color;
+    }
+  }
+}
+
+// HERO SECTION
+.hero {
+  background-image: url(../img/hero\ bg.jpg);
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .wrap {
+    @include flex-box(stretch, center);
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    gap: 10px;
+
+    .left-side {
+
+      h1 {
+        @include font-body(3.5rem, 700);
+        width: 500px;
+        color: $light-color;
+        text-shadow: 0 0 10px rgba($color: $dark-color, $alpha: .8)
+      }
+
+      p {
+        @include font-body(1rem, 400);
+        width: 500px;
+        margin-bottom: 10px
+      }
+
+      .menu {
+        @extend %hover-danger-bg;
+        @include font-head(1.2rem, 500);
+        padding: 8px 15px;
+        text-decoration: none;
+        color: $light-color;
+        border-radius: 6px;
+      }
+
+      .github {
+        @extend %hover-outline-bg;
+        @include font-body(.9rem, 400);
+        text-decoration: none;
+        color: $dark-color;
+        padding: 8px 15px;
+        margin-left: 10px;
+        border-radius: 6px;
+      }
+    }
+
+    .right-side {
+      border-radius: 31px;
+      box-sizing: border-box;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ABOUT SECTION
+.about {
+  @include flex-box(space-between, center);
+  width: 90%;
+  margin: 20px auto;
+
+  .content-side {
+    width: 650px;
+
+    h2 {
+      @include font-head(3rem, 800);
+      @extend %title-hover;
+    }
+
+    h3 {
+      @include font-head(2.8rem, 800);
+    }
+
+    p {
+      @include font-body(.9rem, 400);
+      line-height: 203.523%;
+    }
+  }
+}
+
+// MENU SECTION
+.menu {
+  background-color: $primary-color;
+  padding-bottom: 10px;
+
+  .background-menu {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 0
+  }
+
+  h2 {
+    @include font-head(3rem, 800);
+    @extend %title-hover;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+
+    .card-body {
+      box-sizing: border-box;
+      overflow: hidden;
+      text-align: center;
+      transition: all ease-in-out .3s;
+      cursor: pointer;
+
+      &:hover {
+        transition: all ease-in-out .3s;
+        transform: scale(.9);
+      }
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      h6 {
+        @include font-body(.7rem, 500);
+      }
+
+      h3 {
+        @include font-body(1rem, 800);
+      }
+
+      a {
+        @include font-body(.8rem, 400);
+        text-decoration: none;
+        color: $dark-color;
+        padding-bottom: 5px;
+        border-bottom: 2px solid $dark-color;
+      }
+    }
+  }
+}
+
+.twolayers {
+  background-image: url(../img/costumer\ bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+
+  // COSTUMER QOUTES SECTION
+  .costumer {
+    @include flex-box(space-between);
+    flex-direction: row-reverse;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5%;
+
+  }
+
+  .right-side {
+    @include flex-box(center);
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba($color: #000000, $alpha: .2);
+
+    h2 {
+      @include font-head(3rem, 800);
+      @extend %title-hover;
+      color: $light-color;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      @include font-body(.9rem, 400);
+      margin-bottom: 10px;
+      color: $light-color;
+      line-height: 203.523%;
+    }
+
+  }
+
+  .left-side {
+    width: 50%;
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+
+      .card-item {
+        @include flex-box(center, center, column);
+        @extend %hover-outline-bg;
+        border-radius: 12px;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba($color: $secondary-color, $alpha: .5);
+        background-color: rgba($color: $secondary-color, $alpha: .2);
+
+        img {
+          border-radius: 100%;
+          margin: 10px 0;
+          border: 2px solid $secondary-color
+        }
+
+        h4 {
+          @include font-body(.9rem, 600);
+        }
+
+        h6 {
+          @include font-body(1rem, 800);
+          color: $primary-color
+        }
+
+        p {
+          @include font-body(.7rem, 400);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // CONTACT SECTION
+  .contact {
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 8%;
+
+    .form-contact {
+      width: 60%;
+      margin: 0 auto;
+
+      h2 {
+        @include font-head(3rem, 800);
+        @extend %title-hover;
+        width: 300px;
+        margin-bottom: 10px;
+      }
+
+      .input-item {
+        @include flex-box(center, stretch, column);
+        padding: 10px;
+
+        label {
+          @include font-body(1rem, 500);
+        }
+
+        input {
+          height: 30px;
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid #000;
+        }
+
+        textarea {
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid #000;
+        }
+      }
+
+      button {
+        @include font-body(1rem, 400);
+        @extend %hover-danger-bg;
+        width: 100%;
+        padding: 12px 0;
+        border: none;
+        border-radius: 8px;
+        color: $light-color;
+      }
+    }
+  }
+}
+
+footer {
+  @include flex-box(center, center);
+  height: 40px;
+  background-color: $primary-color;
+  color: #fff;
+  @include font-body(.8rem, 500);
+}

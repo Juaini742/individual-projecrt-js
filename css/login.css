@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container .input-body button {
+  box-shadow: 0 0 5px rgba(249, 50, 50, 0.5);
+  background-color: #F93232;
+  transition: all ease-in-out 0.3s;
+}
+.container .input-body button:hover {
+  background-color: #E20505;
+  box-shadow: 0 0 5px rgba(249, 50, 50, 0.5);
+  transition: all ease-in-out 0.3s;
+}
+
+.container {
+  background-image: url(../img/Rectangle\ 34.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .input-body {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.container .input-body h2 {
+  font-family: "The Nautigal", cursive;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+.container .input-body .input-item {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  color: #fff;
+  width: 60%;
+  gap: 10px;
+}
+.container .input-body .input-item label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.container .input-body .input-item input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  transition: all ease-in-out 0.3s;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.container .input-body .input-item input:hover {
+  background-color: bisque;
+  transition: all ease-in-out 0.3s;
+}
+.container .input-body button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+}/*# sourceMappingURL=login.css.map */

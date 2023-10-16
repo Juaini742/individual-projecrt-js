@@ -1,0 +1,61 @@
+*
+  margin: 0
+  padding: 0
+
+$primary-color: #F4D160
+$secondary-color: #F93232
+$tertiary-color: #E20505
+$light-color: #fff
+$dark-color: #000
+
+$font-body: 'Poppins', sans-serif
+$font-title: 'The Nautigal', cursive
+$sh-primary: 0 0 5px rgba($color: $secondary-color, $alpha: .5)
+
+@mixin flex-box($justify, $align: streach, $direction:row)
+  display: flex
+  justify-content: $justify
+  align-items: $align
+  flex-direction: $direction
+
+@mixin font-head($size, $weight)
+  font-family: $font-title
+  font-size: $size
+  font-weight: $weight
+
+@mixin font-body($size, $weight)
+  font-family: $font-body
+  font-size: $size
+  font-weight: $weight
+
+%hover-danger-bg
+  box-shadow: $sh-primary
+  background-color: $secondary-color
+  transition: all ease-in-out .3s
+
+  &:hover
+    background-color: $tertiary-color
+    box-shadow: $sh-primary
+    transition: all ease-in-out .3s
+
+%hover-outline-bg
+  box-shadow: $sh-primary
+  border: 2px solid $tertiary-color
+  transition: all ease-in-out .3s
+
+  &:hover
+    color: $light-color
+    background-color: $secondary-color
+    transition: all ease-in-out .3s
+
+%title-hover
+  padding: 8px 18px
+  transition: all ease-in-out .3s
+  // border-top: 2px solid #000
+  border-bottom: 2px solid #000
+  width: 20%
+
+  &:hover
+    background-color: $tertiary-color
+    transition: all ease-in-out .3s
+    color: $light-color
