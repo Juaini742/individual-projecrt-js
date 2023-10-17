@@ -28,13 +28,19 @@
       }
     }
 
-    .login {
-      @extend %hover-outline-bg;
-      @include font-body(.9rem, 400);
-      text-decoration: none;
-      padding: 5px 10px;
-      border-radius: 5px;
+    span {
+      @include font-body(1rem, 400);
       color: $dark-color;
+
+    }
+
+    button {
+      @include font-body(.9rem, 400);
+      @extend %hover-outline-bg;
+      padding: 3px 10px;
+      background-color: transparent;
+      border-radius: 5px;
+      margin-left: 10px
     }
   }
 }

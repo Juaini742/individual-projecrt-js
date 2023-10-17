@@ -14,12 +14,12 @@
   transition: all ease-in-out 0.3s;
 }
 
-.twolayers .left-side .cards .card-item, .hero .wrap .left-side .github, .navigation .wrap .login {
+.twolayers .left-side .cards .card-item, .hero .wrap .left-side .github, .navigation .wrap button {
   box-shadow: 0 0 5px rgba(249, 50, 50, 0.5);
   border: 2px solid #E20505;
   transition: all ease-in-out 0.3s;
 }
-.twolayers .left-side .cards .card-item:hover, .hero .wrap .left-side .github:hover, .navigation .wrap .login:hover {
+.twolayers .left-side .cards .card-item:hover, .hero .wrap .left-side .github:hover, .navigation .wrap button:hover {
   color: #fff;
   background-color: #F93232;
   transition: all ease-in-out 0.3s;
@@ -69,14 +69,20 @@
   border-bottom: 2px solid #000;
   transition: all ease-in-out 0.3s;
 }
-.navigation .wrap .login {
+.navigation .wrap span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+.navigation .wrap button {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  text-decoration: none;
-  padding: 5px 10px;
+  padding: 3px 10px;
+  background-color: transparent;
   border-radius: 5px;
-  color: #000;
+  margin-left: 10px;
 }
 
 .hero {

@@ -1,6 +1,25 @@
 import { about } from "./data/about-data.js";
 import { dataMmenu } from "./data/menu-data.js";
 import { qoutesData } from "./data/qoutes-data.js";
+import { userData } from "./data/user-data.js";
+
+// username;
+function getDataUser() {
+  const dataUser = localStorage.getItem('user')
+
+  console.log(dataUser);
+  if (dataUser) {
+    const dataId = JSON.parse(dataUser)
+    document.querySelector('#userBio').textContent = dataId.username
+  }
+}
+getDataUser()
+
+// function onLogout() {
+//   localStorage.removeItem('user')
+//   window.location.href = 'login.html'
+// }
+
 
 // about
 document.querySelector('#about img').src = about.imgBg;
