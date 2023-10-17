@@ -49,6 +49,12 @@
   width: 90%;
   margin: 0 auto;
 }
+.navigation .wrap .logo {
+  width: 25px;
+}
+.navigation .wrap .logo img {
+  width: 100%;
+}
 .navigation .wrap .list-items {
   display: flex;
   justify-content: center;
@@ -150,6 +156,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 90%;
   margin: 20px auto;
 }

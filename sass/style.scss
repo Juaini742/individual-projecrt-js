@@ -10,6 +10,14 @@
     width: 90%;
     margin: 0 auto;
 
+    .logo {
+      width: 25px;
+
+      img {
+        width: 100%
+      }
+    }
+
     .list-items {
       @include flex-box(center, center);
       list-style: none;
@@ -110,6 +118,7 @@
 // ABOUT SECTION
 .about {
   @include flex-box(space-between, center);
+  flex-wrap: wrap;
   width: 90%;
   margin: 20px auto;
 

@@ -8,6 +8,7 @@
   height: 100vh;
   @include flex-box(center, center);
 
+
   .wrap {
     width: 90%;
     @include flex-box(space-evenly, center);
@@ -43,6 +44,10 @@
         text-decoration: none;
       }
 
+      button {
+        border: none
+      }
+
       .buy-btn {
         @extend %hover-danger-bg;
         @include font-body(.8rem, 400);
@@ -76,6 +81,76 @@
       img {
         width: 100%;
         border-radius: 12px;
+      }
+    }
+  }
+
+  .purchase-popUp {
+    background-color: rgba($color: #000000, $alpha: .8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+
+    .cards {
+      @include flex-box(center, center);
+      width: 100%;
+      height: 100%;
+    }
+
+    .card {
+      padding: 15px;
+      background-color: rgba($color: $primary-color, $alpha: .8);
+      border-radius: 12px;
+      width: 50%;
+
+      .img-detail {
+        @include flex-box(center);
+      }
+
+      .info-detail {
+
+        h2 {
+          @include font-body(1rem, 500);
+        }
+
+        h3 {
+          @include font-body(1.2rem, 800);
+        }
+
+        p {
+          @include font-body(1rem, 500);
+          // background-color: red;
+        }
+
+        ul {
+          list-style: none;
+          margin-bottom: 5px;
+
+          li {
+            @include font-body(.9rem, 500);
+          }
+        }
+
+        .buy-btn {
+          @extend %hover-danger-bg;
+          @include font-body(.8rem, 500);
+          padding: 4px 10px;
+          border-radius: 6px;
+          color: $light-color;
+          text-decoration: none;
+          border: none
+        }
+
+        .back-btn {
+          @extend %hover-outline-bg;
+          @include font-body(.8rem, 500);
+          padding: 4px 10px;
+          border-radius: 6px;
+          color: $light-color;
+          text-decoration: none;
+          background-color: transparent;
+        }
       }
     }
   }
