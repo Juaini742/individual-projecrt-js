@@ -1,6 +1,5 @@
 import { userData } from "./data/user-data.js";
 
-
 console.log(userData);
 
 function onLogin() {
@@ -18,7 +17,6 @@ function onLogin() {
     alert('Username atau Password yang anda masukkan salah')
   }
 }
-
 
 const formLogin = document.querySelector('#formLogin')
 

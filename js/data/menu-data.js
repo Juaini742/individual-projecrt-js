@@ -5,7 +5,16 @@ export const dataMmenu = [
     titleMenu: 'Ayam Panggang',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -14,7 +23,16 @@ export const dataMmenu = [
     titleMenu: 'Cumi Goreng',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -23,7 +41,16 @@ export const dataMmenu = [
     titleMenu: 'Ayam Terasi Kuda',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -32,7 +59,16 @@ export const dataMmenu = [
     titleMenu: 'Kuda Rica',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -41,7 +77,16 @@ export const dataMmenu = [
     titleMenu: 'Mie Pedas',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -50,7 +95,16 @@ export const dataMmenu = [
     titleMenu: 'Soto Kuah Asam',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -59,7 +113,16 @@ export const dataMmenu = [
     titleMenu: 'Ayam Penyet Sedap',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -68,7 +131,16 @@ export const dataMmenu = [
     titleMenu: 'Cumi Kentucky',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -77,7 +149,16 @@ export const dataMmenu = [
     titleMenu: 'Ikan Kremes',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   },
   {
@@ -86,7 +167,16 @@ export const dataMmenu = [
     titleMenu: 'Sambal Acan',
     priceMenu: '12.000.00',
     category: 'Makanan Berat',
-    nutrient: 'Kalori: Sekitar 300-400 kalori. Lemak: Sekitar 10-15 gram. Karbohidrat: Sekitar 40-50 gram.',
+    nutrient: [
+      'Kalori: Sekitar 300-400 kalori.',
+      'Lemak: Sekitar 10-15 gram.',
+      'Karbohidrat: Sekitar 40-50 gram.',
+      'Protein: Sekitar 8-12 gram.',
+      'Serat: Sekitar 2-4 gram.',
+      'Kolesterol: Bervariasi, hingga 100 mg.',
+      'Natrium: Bervariasi, hingga 800 mg.',
+      'Vitamin dan Mineral: Bergantung pada bahan tambahan.'
+    ],
     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptate necessitatibus facere dolorum ullam temporibus iste consectetur voluptatibus reiciendis adipisci.'
   }
 ]

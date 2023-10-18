@@ -3,34 +3,42 @@ import { dataMmenu } from "./data/menu-data.js";
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search)
   const dataId = parseInt(urlParams.get("id"), 10);
-
-  // console.log(dataId)
-
   const data = dataMmenu.find(i => i.id === dataId);
-
-  // console.log(data)
-
-  // const buyInfo = alert(`${data.imgMenu}`)
 
   if (data) {
 
     document.querySelector('#form').textContent = 'Purchase Form';
-    document.querySelector('#title-menu').textContent = data.titleMenu;
-    document.querySelector('#price-menu').textContent = data.priceMenu;
-    document.querySelector('#desc-menu').textContent = data.description;
+    const titleElm = document.querySelectorAll('#title-menu')
+    const priceElm = document.querySelectorAll('#price-menu')
+    const descElm = document.querySelectorAll('#desc-menu')
+    const purchaseImg = document.querySelectorAll('#purchase-img')
 
-    const purchaseImg = document.querySelector('#purchase-img')
-    purchaseImg.innerHTML = `<img src="${data.imgMenu}" alt="">`
+    titleElm.forEach(element => {
+      element.textContent = data.titleMenu;
+    });
+    priceElm.forEach(element => {
+      element.textContent = data.priceMenu;
+    });
+    descElm.forEach(element => {
+      element.textContent = data.description;
+    });
+    purchaseImg.forEach(element => {
+      element.innerHTML = `<img src="${data.imgMenu}" alt="">`
+    });
 
+    const nutElm = document.querySelector('#nut-detail')
+    const dataNut = data.nutrient
+    console.log(dataNut);
 
-    document.querySelector('#title-detail').textContent = data.titleMenu;
-    document.querySelector('#price-detail').textContent = data.priceMenu;
-    document.querySelector('#desc-detail').textContent = data.description;
-    document.querySelector('#nut-detail').textContent = data.nutrient;
+    dataNut.forEach(el => {
+
+      const liMenu = document.createElement('li')
+      liMenu.textContent = el
+
+      nutElm.appendChild(liMenu)
+    });
+
     document.querySelector('#cate-detail').textContent = `Category: ${data.category}`;
-
-    const imgDetail = document.querySelector('#img-detail')
-    imgDetail.innerHTML = `<img src="${data.imgMenu}" alt="">`
   }
 
 
@@ -47,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = 'index.html'
   })
 
-
   const closeBtn = document.querySelector('#close-btn')
   closeBtn.addEventListener('click', () => {
     const popdown = document.querySelector('.purchase-popUp')
@@ -56,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log(popdown);
   })
-
 })
 
 

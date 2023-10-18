@@ -109,8 +109,8 @@
   gap: 10px;
 }
 .hero .wrap .left-side h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3.5rem;
+  font-family: "The Nautigal", cursive;
+  font-size: 4rem;
   font-weight: 700;
   width: 500px;
   color: #fff;
@@ -243,7 +243,7 @@
   background-repeat: no-repeat;
   margin: 0;
 }
-.twolayers .costumer {
+.twolayers .customer {
   display: flex;
   justify-content: space-between;
   align-items: streach;

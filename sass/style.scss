@@ -71,7 +71,7 @@
     .left-side {
 
       h1 {
-        @include font-body(3.5rem, 700);
+        @include font-head(4rem, 700);
         width: 500px;
         color: $light-color;
         text-shadow: 0 0 10px rgba($color: $dark-color, $alpha: .8)
@@ -208,7 +208,7 @@
   margin: 0;
 
   // COSTUMER QOUTES SECTION
-  .costumer {
+  .customer {
     @include flex-box(space-between);
     flex-direction: row-reverse;
     gap: 10px;

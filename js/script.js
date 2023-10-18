@@ -15,12 +15,6 @@ function getDataUser() {
 }
 getDataUser()
 
-// function onLogout() {
-//   localStorage.removeItem('user')
-//   window.location.href = 'login.html'
-// }
-
-
 // about
 document.querySelector('#about img').src = about.imgBg;
 document.querySelector('#about #title-about').textContent = about.title;
@@ -45,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // qoutes
 document.addEventListener('DOMContentLoaded', () => {
-  const qoutesElm = document.querySelector('#costumer #card-item')
+  const qoutesElm = document.querySelector('#customer #card-item')
 
   qoutesData.forEach(data => {
     const cardQoutes = document.createElement('div')
