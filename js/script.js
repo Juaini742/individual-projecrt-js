@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   dataMmenu.forEach(data => {
     const card = document.createElement("div")
-    card.classList = "card-body"
+    card.classList.add("card-body")
     card.innerHTML = `
     <img src="${data.imgMenu}" alt="card">
     <h6>${data.titleMenu}</h6>
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   qoutesData.forEach(data => {
     const cardQoutes = document.createElement('div')
-    cardQoutes.classList = 'card-item'
+    cardQoutes.classList.add('card-item')
 
     cardQoutes.innerHTML = `
     <img src="${data.img}" alt="">

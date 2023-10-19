@@ -36,13 +36,15 @@
         margin-bottom: 10px;
         background-color: transparent;
         transition: all ease-in-out .3s;
+        @include font-body(1rem, 700);
+        color: $light-color;
 
         border: none {
           bottom: 2px solid #fff;
         }
 
         &:hover {
-          background-color: bisque;
+          background-color: $secondary-color;
           transition: all ease-in-out .3s;
         }
 

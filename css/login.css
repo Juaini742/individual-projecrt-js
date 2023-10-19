@@ -61,11 +61,15 @@
   margin-bottom: 10px;
   background-color: transparent;
   transition: all ease-in-out 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
   border: none;
   border-bottom: 2px solid #fff;
 }
 .container .input-body .input-item input:hover {
-  background-color: bisque;
+  background-color: #F93232;
   transition: all ease-in-out 0.3s;
 }
 .container .input-body button {

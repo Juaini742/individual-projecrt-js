@@ -2,7 +2,7 @@ import { dataMmenu } from "./data/menu-data.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search)
-  const dataId = parseInt(urlParams.get("id"), 10);
+  const dataId = parseInt(urlParams.get("id"));
   const data = dataMmenu.find(i => i.id === dataId);
 
   if (data) {
@@ -30,38 +30,35 @@ document.addEventListener("DOMContentLoaded", () => {
     const dataNut = data.nutrient
     console.log(dataNut);
 
-    dataNut.forEach(el => {
+    dataNut.forEach(elm => {
 
       const liMenu = document.createElement('li')
-      liMenu.textContent = el
+      liMenu.textContent = elm
 
       nutElm.appendChild(liMenu)
     });
-
     document.querySelector('#cate-detail').textContent = `Category: ${data.category}`;
   }
 
 
   const purchaseBtn = document.querySelector('#buy-btn')
-  purchaseBtn.addEventListener('click', () => {
-    const popUp = document.querySelector('.purchase-popUp')
+  const alertPurchase = document.querySelector('#purchase-btn')
+  const popUp = document.querySelector('.purchase-popUp')
+  const closeBtn = document.querySelector('#close-btn')
 
+  purchaseBtn.addEventListener('click', () => {
     popUp.style.display = 'flex'
   })
 
-  const alertPurchase = document.querySelector('#purchase-btn')
+  closeBtn.addEventListener('click', () => {
+    popUp.style.display = 'none'
+
+    console.log(popUp);
+  })
+
   alertPurchase.addEventListener('click', () => {
     alert('Your purchase is in progress, we will notify you when it is complete. Thank You')
     window.location.href = 'index.html'
-  })
-
-  const closeBtn = document.querySelector('#close-btn')
-  closeBtn.addEventListener('click', () => {
-    const popdown = document.querySelector('.purchase-popUp')
-
-    popdown.style.display = 'none'
-
-    console.log(popdown);
   })
 })
 
